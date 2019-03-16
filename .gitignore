@@ -1,0 +1,9 @@
+#IDE files
+/.idea
+
+#Node files added by mistake
+/node_modules
+
+#Node modules in server
+/Server/node_modules
+/react_app/node_modules
