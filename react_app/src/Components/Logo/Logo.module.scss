@@ -1,3 +1,28 @@
-.container{
+$main-factor: 1;
+$logo-font: 36px;
+$font-top-factor: 0.4*$main-factor;
+$font-bottom-factor: 0.2*$main-factor;
+$font-left-factor: 0.2*$main-factor;
 
+.container {
+  width: fit-content;
+  box-sizing: content-box;
+  padding-right: 3vh;
+  height: 100%;
+
+}
+
+.sign {
+  font-family: Broadway, sans-serif;
+  color: #6f3700;
+  font-size: $logo-font;
+  margin-top: $font-top-factor*$logo-font;
+  margin-bottom: $font-bottom-factor*$logo-font;
+  margin-left: $font-left-factor*$logo-font;
+  text-align: center;
+  float: left;
+}
+
+img {
+  float: left;
 }
