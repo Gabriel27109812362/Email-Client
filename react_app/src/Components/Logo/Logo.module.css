@@ -1,0 +1,23 @@
+.container {
+  width: fit-content;
+  box-sizing: content-box;
+  padding-right: 3vh;
+  height: 100%;
+}
+
+.sign {
+  font-family: Broadway, sans-serif;
+  color: #6f3700;
+  font-size: 36px;
+  margin-top: 14.4px;
+  margin-bottom: 7.2px;
+  margin-left: 7.2px;
+  text-align: center;
+  float: left;
+}
+
+img {
+  float: left;
+}
+
+/*# sourceMappingURL=Logo.module.css.map */
