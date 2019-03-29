@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styles from './App.module.scss';
 import Header from './Components/Header/Header';
 import Menu from './Components/Menu/Menu';
-import MainContainer from './Components/MainContainer/Container';
+import MainContainer from './Components/MainContainer/MainContainer';
 
 class App extends Component {
    render() {

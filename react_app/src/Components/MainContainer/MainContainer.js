@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Container.module.scss';
+import styles from './MainContainer.module.scss';
 
-const Container = (props) => {
+const MainContainer = (props) => {
    return (
       <div className={styles.box}>
          {props.children}
       </div>
    );
 };
-export default Container;
+export default MainContainer;
