@@ -4,7 +4,8 @@ import styles from './Option.module.scss';
 const Option = (props) => {
    return (
       <button className={styles.option}>
-         option
+         <img className={styles.symbol} src={props.symbol}/>
+         <p>{props.children}</p>
       </button>
    );
 };

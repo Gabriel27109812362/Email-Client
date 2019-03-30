@@ -8,7 +8,10 @@ const Menu = (props) => {
    return (
       <div className={styles.container}>
       <NewMessage/>
-      <Option/>
+         <Option>Odebrane</Option>
+         <Option>Wysłane</Option>
+         <Option>Wszystkie</Option>
+         <Option>Kosz</Option>
       </div>
    );
 };

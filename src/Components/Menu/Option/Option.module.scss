@@ -1,3 +1,15 @@
-.option{
+$radius-left-size: 2vh;
+$radius-right-size: .5vh;
 
+.option{
+  width: 12vw;
+   height: 5vh;
+   margin-top: .5vh;
+  margin-bottom: .5vh;
+   background-color: #ffc800;
+   color: white;
+   position: relative;
+   float: left;
+   border: none;
+  border-radius: $radius-right-size $radius-left-size $radius-left-size $radius-right-size;
 }
