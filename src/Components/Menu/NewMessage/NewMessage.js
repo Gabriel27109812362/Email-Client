@@ -5,7 +5,7 @@ const NewMessage = (props) => {
    return (
       <button className={styles.message}>
          <img className={styles.symbol} src={require('./envelop.svg')} alt='at'/>
-         <p>Nowa Wiadomość</p>
+         <p className={styles.pgr}>Nowa Wiadomość</p>
       </button>
    );
 };

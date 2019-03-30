@@ -1,7 +1,7 @@
 $margin-symbol-size: 1.5vh;
+$animation-time: 0.3s;
 
 .message {
-
   width: 9vw;
   height: 6vh;
   margin-top: 5vh;
@@ -11,10 +11,12 @@ $margin-symbol-size: 1.5vh;
   float: left;
   border: none;
   border-radius: 2.5vh;
+}
+
+.pgr {
   font-size: 1.6vh;
   font-family: "Comic Sans MS", sans-serif;
   font-weight: bold;
-
 }
 
 .symbol {
@@ -23,33 +25,42 @@ $margin-symbol-size: 1.5vh;
   width: 1.5vw;
 }
 
-.message:hover {
-
-  background-color: white;
-  color: #ffc800;
-
-}
-
 .message:hover .symbol {
-
-  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97);
-  transform: translate3d(0,0,0);
+  animation: shake $animation-time;
+  transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
+.message:hover .pgr {
+  text-shadow: 0px 0px 1vh #ff1000;
+}
+
+.message:active {
+  background-color: white;
+  color: #ffc800;
+}
+
+.message:active .pgr {
+  text-shadow: none;
+}
+
 @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-4px, 0, 0);
+
+  5.5%, 55%, 49.5%, 99%, 27.5%, 77% {
+    transform: rotate(0deg);
   }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
+  11%, 60.5%, 22%, 71.5% {
+    transform: rotate(7.5deg);
   }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+  16.5%, 66% {
+    transform: rotate(15deg);
   }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
+  33%, 82.5%, 44%, 93.5% {
+    transform: rotate(-7.5deg);
+  }
+  38.5%, 88% {
+    transform: rotate(-15deg);
   }
 }
 
