@@ -1,6 +1,6 @@
 .container {
   width: fit-content;
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding-right: 2vw;
   height: 100%;
 }
