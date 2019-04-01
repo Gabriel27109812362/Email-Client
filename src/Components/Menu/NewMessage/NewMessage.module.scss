@@ -2,7 +2,7 @@ $message-btn-width: calc(30px + 7.5vw);
 $message-btn-height: calc(10px + 2.5vw);
 $message-btn-radius: calc((10px + 2.5vw) * .4);
 $message-txt-size: calc(2px + 0.7vw);
-$margin-symbol-size: 1.5vh;
+$margin-symbol-size: calc(3px + 0.7vw);
 $animation-time: 0.3s;
 
 .message {
@@ -21,12 +21,15 @@ $animation-time: 0.3s;
   font-size: $message-txt-size;
   font-family: "Comic Sans MS", sans-serif;
   font-weight: bold;
+  position: relative;
 }
+
 
 .symbol {
   margin-top: $margin-symbol-size;
   margin-bottom: $margin-symbol-size;
   width: 1.5vw;
+  height: 1.15vw;
 }
 
 .message:hover .symbol {
@@ -37,7 +40,7 @@ $animation-time: 0.3s;
 }
 
 .message:hover .pgr {
-  text-shadow: 0px 0px 1vh #ff1000;
+  text-shadow: 0 0 1vh #ff1000;
 }
 
 .message:active {
