@@ -1,20 +1,24 @@
+$message-btn-width: calc(30px + 7.5vw);
+$message-btn-height: calc(10px + 2.5vw);
+$message-btn-radius: calc((10px + 2.5vw) * .4);
+$message-txt-size: calc(2px + 0.7vw);
 $margin-symbol-size: 1.5vh;
 $animation-time: 0.3s;
 
 .message {
-  width: 9vw;
-  height: 6vh;
+  width: $message-btn-width;
+  height: $message-btn-height;
   margin-top: 5vh;
   background-color: #ffc800;
   color: white;
-  position: relative;
+  text-align: center;
   float: left;
   border: none;
-  border-radius: 2.5vh;
+  border-radius: $message-btn-radius;
 }
 
 .pgr {
-  font-size: 1.6vh;
+  font-size: $message-txt-size;
   font-family: "Comic Sans MS", sans-serif;
   font-weight: bold;
 }
